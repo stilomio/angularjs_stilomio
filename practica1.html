@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practica 1</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   
+  </head>
+  <body>
+
+  	<div class="container-fluid">
+
+
+    <h1>Practica 1</h1>
+
+    <div ng-app >
+    	<div class="row">
+  <div class="col-xs-1">
+    	<label>Nombre: </label>
+    	 </div>
+    	<div class="col-xs-5">
+    	<input type="text" placeholder="Escribe tu Nombre" ng-model="nombre" class="form-control" />
+ </div>
+
+    		<div class="col-xs-2">
+ <label>Color de texto: </label>
+  </div>
+     			<div class="col-xs-4">
+
+    	<select ng-model="color" class="form-control" >
+			<option value="" >Seleccione un Color</option>    		
+    		<option>default</option>
+    		<option>primary</option>
+    		<option>warning</option>
+    		<option>danger</option>
+    		<option>info</option>
+    		<option>success</option>
+    	</select>
+    	 </div>
+    	  </div>
+    
+    	<h1 class="text-{{color}}">Hola {{nombre}}!</h1>
+    </div>
+</div>
+
+    <script src="js/angular.min.js"></script>
+  </body>
+</html>
